@@ -13,7 +13,7 @@ Implementing Risk the board game
 Things still being worked on:
 <ul>
 <li>Displaying attacking and defending countries (no adjacency logic yet)</li>
-<li>Ability to continue a battle manually or automaticaly</li>
+<li>Ability to continue a battle manually or automatically</li>
 </ul>
 </br>
 <strong>Country/Player</strong>
