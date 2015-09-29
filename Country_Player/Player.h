@@ -5,17 +5,19 @@
 #include <string>
 #include <vector>
 
-//class Country;
+class Country;
 
 class Player {
 private:
 	std::string player_name;
-	//std::vector<Country> countries_owned;
+	std::vector<Country*> countries_owned;
 public:
 	Player(std::string name);
+	~Player();
 	std::string get_player_name();
-	//void add_to_countries_owned(Country country);
-	//void remove_from_countries_owned(Country country);
+	std::string print_countries_owned();
+	void assign_country(Country& country);
+	void remove_country(Country& country);
 };
 
 #endif
