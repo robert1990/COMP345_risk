@@ -1,0 +1,15 @@
+# players: 2 - 4 
+# armies: depends on number of players
+	- 2 players: 40
+	- 3 players: 35
+	- 4 players: 30
+
+# countries: 42
+# continents: 6
+# cards: 3 types of cards, won after taking over a country. After handing in 3 cards of the
+ same type, you get this many reinforcements globally 4,6,8,10,12,15,+5...
+# attacking: attack as many times as you want in one turn
+
+
+
+
