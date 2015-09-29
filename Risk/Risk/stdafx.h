@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <tchar.h>
 
+#include "Player.h"
+#include "Country.h"
 
 
 // TODO: reference additional headers your program requires here
