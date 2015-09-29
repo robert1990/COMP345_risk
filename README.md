@@ -18,10 +18,10 @@ Things still being worked on:
 </br>
 <strong>Country/Player</strong>
 </br>
-Has the basic functionality for countries and players.
+Has the basic functionality for countries and players. Including adding/removing countries to/from players, as well as error handling for such operations.
 </br>
 Things still being worked on:
 <ul>
-<li>Figure out how to refer to other classes in a header file without breaking the whole system</li>
-<li>Once the above is figured out, need to figure out a way to remove a country that a player currently owns</li>
+<li>Setting/Incrementing/Deleting Armies.</li>
+<li>Merge Combat with Country/Player and make the logical connections between the two.</li>
 </ul>
