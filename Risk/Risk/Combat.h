@@ -18,6 +18,7 @@ namespace Combat {
 	int calculate_results(std::vector<int> att, std::vector<int> def);
 	std::string analyze_results(int results);
 	std::string combat_results(int num_att, int num_def, Country& att_country, Country& def_country);
+	
 	void combat(Country& att_country, Country& def_country);
 	void move_armies(int dice_rolled, Country& att_country, Country& def_country);
 }
