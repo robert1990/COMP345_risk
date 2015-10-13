@@ -12,6 +12,11 @@
 
 #include "Player.h"
 #include "Country.h"
+#include "Deck.h"
+#include "CardCashing.h"
+#include "Combat.h"
 
+#include <ctime>
+#include <sstream>
 
 // TODO: reference additional headers your program requires here

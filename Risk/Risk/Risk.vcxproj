@@ -79,7 +79,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CardCashing.h" />
+    <ClInclude Include="Combat.h" />
     <ClInclude Include="Country.h" />
+    <ClInclude Include="Deck.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="MapManager.h" />
@@ -89,7 +92,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CardCashing.cpp" />
+    <ClCompile Include="Combat.cpp" />
     <ClCompile Include="Country.cpp" />
+    <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="MapManager.cpp" />
