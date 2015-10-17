@@ -26,6 +26,11 @@ cash_cards(deck), returns a certain number of cards from the player's hand to th
 view_hand(), a simple function returning a string containing the values of the Card IDs currently stored in the player's hand.
 */
 
+Player::Player() {
+	player_name = "Default player";
+	std::cout << get_player_name() + " Player object created." << std::endl;
+}
+
 Player::Player(std::string name) {
 	player_name = name;
 	std::cout << get_player_name() + " Player object created." << std::endl;
@@ -144,4 +149,8 @@ void Player::view_hand() {
 			}
 		}
 	}
+}
+
+int Player::numberOfCountriesOwned() {
+	return countries_owned.size();
 }

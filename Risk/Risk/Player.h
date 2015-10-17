@@ -18,6 +18,7 @@ private:
 	/*May possible have to refactor the hand logic to be a vector of pointers, similar to Country*/
 	std::vector<Deck::Card> hand;
 public:
+	Player();
 	Player(std::string name);
 	~Player();
 	std::string get_player_name();
@@ -29,6 +30,7 @@ public:
 	void add_to_hand(Deck::Card);
 	void cash_cards(Deck& deck);
 	void view_hand();
+	int numberOfCountriesOwned();
 };
 
 #endif
