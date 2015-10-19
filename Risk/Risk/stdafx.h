@@ -15,6 +15,7 @@
 #include "Deck.h"
 #include "CardCashing.h"
 #include "Combat.h"
+#include "InputProcedure.h"
 
 #include <ctime>
 #include <sstream>

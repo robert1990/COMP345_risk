@@ -24,6 +24,7 @@ print_countries_owned(), a simple function returning a string containing the nam
 add_to_hand(Card), pushes the value of a card to the hand vector, representing the acquisiton of a card.
 cash_cards(deck), returns a certain number of cards from the player's hand to the deck, following the logic defined in the CardCashing namespace.
 view_hand(), a simple function returning a string containing the values of the Card IDs currently stored in the player's hand.
+numberOfCountriesOwned(), a simple function returning an int containing the size of the player's countries_owned vector, indicating the number of countries that player currently owns.
 */
 
 Player::Player() {
@@ -100,6 +101,10 @@ std::string Player::print_countries_owned() {
 	return countries;
 }
 
+int Player::numberOfCountriesOwned() {
+	return countries_owned.size();
+}
+
 /*Utility function, used in add_to_hand in order to sort the contents.*/
 bool comparison_function(Deck::Card c1, Deck::Card c2) { return (c1.card_id < c2.card_id); }
 
@@ -149,8 +154,4 @@ void Player::view_hand() {
 			}
 		}
 	}
-}
-
-int Player::numberOfCountriesOwned() {
-	return countries_owned.size();
 }

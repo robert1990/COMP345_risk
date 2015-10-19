@@ -5,6 +5,7 @@
 
 #include "stdafx.h"
 #include "CardCashing.h"
+#include "InputProcedure.h"
 
 /*
 CARDCASHING NAMESPACE
@@ -143,7 +144,7 @@ namespace CardCashing {
 			int id_to_cash;
 			while(valid_choice == false) {
 				int choice;
-				std::cin >> choice;
+				choice = InputProcedure::get_choice();
 				//If the choice is within a valid range (1-3), take the choice-1 and set the id_to_cash as the choice.
 				if((choice-1 < indices_where_true.size()) && (choice-1 >= 0)) {
 					id_to_cash = choice-1;
@@ -218,7 +219,7 @@ namespace CardCashing {
 			std::cout << "1. 3 of the same card" << std::endl;
 			std::cout << "2. 1 of each type of card" << std::endl;
 			int choice;
-			std::cin >> choice;
+			choice = InputProcedure::get_choice();
 			//If choice is equal to 1, then cash on condition1.
 			if(choice == 1) {
 				valid_choice = true;

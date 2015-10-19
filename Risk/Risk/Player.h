@@ -26,11 +26,11 @@ public:
 	void assign_country(Country& country);
 	void remove_country(Country& country);
 	std::string print_countries_owned();
+	int numberOfCountriesOwned();
 	
 	void add_to_hand(Deck::Card);
 	void cash_cards(Deck& deck);
 	void view_hand();
-	int numberOfCountriesOwned();
 };
 
 #endif

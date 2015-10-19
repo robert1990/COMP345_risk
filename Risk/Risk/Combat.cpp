@@ -9,6 +9,7 @@
 #include "stdafx.h"
 #include "Combat.h"
 #include "Country.h"
+#include "InputProcedure.h"
 
 /*
 COMBAT NAMESPACE
@@ -261,7 +262,7 @@ namespace Combat {
 						while(valid_choice == false) {
 							std::cout << "You can attack with 1 army." << std::endl;
 							std::cout << "Please enter the number of armies you would like to attack with." << std::endl;
-							std::cin >> choice;
+							choice = InputProcedure::get_choice();
 							//If the choice is equal to 1, the attacker has chosen to attack with their 1 army.
 							if(choice == 1) {
 								//Print the results/perform appropriate decrements
@@ -300,7 +301,7 @@ namespace Combat {
 							std::cout << "You can attack with 1 or 2 armies." << std::endl;
 							std::cout << "Please enter the number of armies you would like to attack with." << std::endl;
 							std::cout << "Or type 9 to go all in (automatically attack until no armies are remaining on one side or the other)" << std::endl;
-							std::cin >> choice;
+							choice = InputProcedure::get_choice();
 							//If the choice is equal to 1, the attacker has chosen to attack with their 1 army.
 							if(choice == 1) {
 								//Print the results/perform appropriate decrements
@@ -389,7 +390,7 @@ namespace Combat {
 							std::cout << "You can attack with 1, 2 or 3 armies." << std::endl;
 							std::cout << "Please enter the number of armies you would like to attack with." << std::endl;
 							std::cout << "Or type 9 to go all in (automatically attack until no armies are remaining on one side or the other)" << std::endl;
-							std::cin >> choice;
+							choice = InputProcedure::get_choice();
 							//If the choice is equal to 1, the attacker has chosen to attack with their 1 army.
 							if(choice == 1) {
 								//Print the results/perform appropriate decrements
@@ -501,7 +502,7 @@ namespace Combat {
 		std::cout << "Congratulations! No defending armies remaining. Please type the number of armies you'd like to move to your new country." << std::endl;
 		while(valid_moving_army_choice == false) {
 			std::cout << "Any value between: " << dice_rolled << "-" << att_country.get_number_of_armies()-1 << std::endl;
-			std::cin >> moving_army_choice;
+			moving_army_choice = InputProcedure::get_choice();
 			//if moving_army choice is within the range, then the appropriate decrements and increments can be performed.
 			if((dice_rolled <= moving_army_choice) && (moving_army_choice <= att_country.get_number_of_armies()-1)) {
 				att_country.decrement_armies(moving_army_choice);
