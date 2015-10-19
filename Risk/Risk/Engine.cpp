@@ -48,14 +48,14 @@ void Engine::fortificationPhase() {
 
 bool Engine::victoryConditions() {
 	
-	if (player.numberOfCountriesOwned < 1)
+	if (player.numberOfCountriesOwned() < 1)
 		defeat = true;
 	else {
 		bool d = false;
-		for (int i = 0; i < AIplayers.size(); ++i) {
+		for (unsigned int i = 0; i < AIplayers.size(); ++i) {
 
 
-			if (AIplayers[i].numberOfCountriesOwned < 1)
+			if (AIplayers[i].numberOfCountriesOwned() < 1)
 				victory = true;
 			else {
 				victory = false;
