@@ -1,4 +1,4 @@
-# COMP345_risk
+# COMP345_risk OUT OF DATE
 Implementing Risk the board game
 </br>
 <i>For now, I've just separated Combat and Country/Player because I had different main methods for testing of both</i>
